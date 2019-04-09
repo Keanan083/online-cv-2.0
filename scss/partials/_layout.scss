@@ -1,0 +1,93 @@
+.grid {
+    display: grid;
+}
+
+.about-me {
+    place-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "h1 h1"
+    "line line"
+    "image-me about-text";
+
+    h1 {
+        grid-area: h1;
+    }
+
+    .line {
+        grid-area: line;
+    }
+
+    .image-me {
+        grid-area: image-me
+    }
+
+    .about-text {
+        grid-area: about-text;
+    }
+}
+
+.skills-container {
+    margin: 0 5rem 0 7rem;
+    row-gap: 2rem;
+    grid-template-areas:
+    "html css js"
+    "sass jquery nodejs";
+
+    .html {
+        grid-area: html;
+    }
+
+    .css {
+        grid-area: css;
+    }
+
+    .js {
+        grid-area: js;
+    }
+
+    .sass {
+        grid-area: sass;
+    }
+
+    .jquery {
+        grid-area: jquery;
+    }
+
+    .nodejs {
+        grid-area: nodejs;
+    }
+}
+
+.my-education {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "h1 h1"
+    "line line"
+    "ned-img high-school-text"
+    "lifechoices-img lifechoices-text";
+
+    h1{
+        grid-area: h1;
+    }
+
+    .line {
+        grid-area: line;
+    }
+
+    .ned-img {
+        grid-area: ned-img;
+    }
+
+    .high-school-text {
+        grid-area: high-school-text;
+    }
+
+    .lifechoices-img {
+        grid-area: lifechoices-img;
+    }
+
+    .lifechoices-text {
+        grid-area: lifechoices-text;
+    }
+}

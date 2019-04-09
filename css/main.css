@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  font-family: 'Comfortaa', cursive; }
+
+a {
+  text-decoration: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poiret One', cursive;
+  text-transform: uppercase; }
+
+* {
+  box-sizing: border-box; }
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative; }
+
+.nav > .nav-header {
+  display: inline; }
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px; }
+
+.nav > .nav-btn {
+  display: none; }
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px; }
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef; }
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.nav > #nav-check {
+  display: none; }
+
+@media (max-width: 600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px; }
+
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px; }
+
+  .nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3); }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee; }
+
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px; }
+
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%; }
+
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px; }
+
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto; } }
+.hero {
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center; }
+  .hero h1 {
+    font-size: 3rem;
+    padding: 3.125rem;
+    text-align: right; }
+  .hero h3 {
+    font-size: 2rem;
+    padding: 0 5rem 5rem 0;
+    text-align: right; }
+  .hero .arrow-gif {
+    width: 5%;
+    height: 5%;
+    margin: 5rem 0 2rem 0; }
+
+.about-me {
+  margin-top: 2rem; }
+  .about-me h1 {
+    text-align: center; }
+  .about-me .image-me {
+    height: 20rem;
+    width: 30rem;
+    background-color: #666666;
+    margin-left: 20%; }
+  .about-me .about-text {
+    padding: 0 3rem 0 0; }
+
+.line {
+  width: 5%;
+  height: 2px;
+  background-color: #5d1432;
+  margin-bottom: 4.375rem; }
+
+.my-skills {
+  text-align: center;
+  margin-top: 4rem; }
+  .my-skills .skill {
+    background-image: linear-gradient(to right top, #641964, #4c1d57, #381c47, #271936, #191424, #24192d, #301e36, #3e223d, #772b51, #b23352, #e34d3e, #ff7a00);
+    height: 20rem;
+    width: 20rem;
+    border-radius: 5%;
+    color: white;
+    display: grid;
+    place-content: center; }
+  .my-skills i {
+    font-size: 10rem; }
+  .my-skills .jq-img {
+    height: 14rem;
+    width: 16rem; }
+
+.my-education {
+  margin-top: 4rem; }
+  .my-education h1 {
+    text-align: center; }
+  .my-education .ned-img {
+    display: grid;
+    place-content: center; }
+  .my-education .lifechoices-img {
+    display: grid;
+    place-content: center; }
+  .my-education .codespace-img {
+    display: grid;
+    place-content: center; }
+
+.grid {
+  display: grid; }
+
+.about-me {
+  place-content: center;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "h1 h1" "line line" "image-me about-text"; }
+  .about-me h1 {
+    grid-area: h1; }
+  .about-me .line {
+    grid-area: line; }
+  .about-me .image-me {
+    grid-area: image-me; }
+  .about-me .about-text {
+    grid-area: about-text; }
+
+.skills-container {
+  margin: 0 5rem 0 7rem;
+  row-gap: 2rem;
+  grid-template-areas: "html css js" "sass jquery nodejs"; }
+  .skills-container .html {
+    grid-area: html; }
+  .skills-container .css {
+    grid-area: css; }
+  .skills-container .js {
+    grid-area: js; }
+  .skills-container .sass {
+    grid-area: sass; }
+  .skills-container .jquery {
+    grid-area: jquery; }
+  .skills-container .nodejs {
+    grid-area: nodejs; }
+
+.my-education {
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "h1 h1" "line line" "ned-img high-school-text" "lifechoices-img lifechoices-text"; }
+  .my-education h1 {
+    grid-area: h1; }
+  .my-education .line {
+    grid-area: line; }
+  .my-education .ned-img {
+    grid-area: ned-img; }
+  .my-education .high-school-text {
+    grid-area: high-school-text; }
+  .my-education .lifechoices-img {
+    grid-area: lifechoices-img; }
+  .my-education .lifechoices-text {
+    grid-area: lifechoices-text; }
+
+/*# sourceMappingURL=main.css.map */
