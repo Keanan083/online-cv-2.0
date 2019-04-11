@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   margin: 0;
   font-family: 'Comfortaa', cursive; }
@@ -13,6 +16,38 @@ h5,
 h6 {
   font-family: 'Poiret One', cursive;
   text-transform: uppercase; }
+
+footer {
+  margin-top: 6.25rem;
+  background-color: #4d4d4d;
+  color: white;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  line-height: 30px; }
+  footer .fa-github {
+    color: white;
+    font-size: 2rem;
+    margin-top: 2rem; }
+  footer .fa-envelope {
+    margin-top: 2rem; }
+  footer .fa-phone {
+    margin-top: 2rem; }
+  footer .download-btn {
+    border: solid;
+    border-color: white;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    width: 9.375rem;
+    height: 3.125rem;
+    transition: 1s ease;
+    margin: 2rem 0 2rem 0; }
+  footer .download-btn:hover {
+    color: black;
+    background: white;
+    border: none;
+    width: 10rem;
+    height: 3.75rem; }
 
 * {
   box-sizing: border-box; }
@@ -111,6 +146,11 @@ h6 {
     font-size: 2rem;
     padding: 0 5rem 5rem 0;
     text-align: right; }
+  .hero .download-btn {
+    border: solid;
+    border: white;
+    background-color: rgba(0, 0, 0, 0);
+    color: white; }
   .hero .arrow-gif {
     width: 5%;
     height: 5%;
@@ -121,7 +161,7 @@ h6 {
   .about-me h1 {
     text-align: center; }
   .about-me .image-me {
-    height: 20rem;
+    height: 25rem;
     width: 30rem;
     background-color: #666666;
     margin-left: 20%; }
@@ -165,6 +205,31 @@ h6 {
     display: grid;
     place-content: center; }
 
+.my-projects {
+  margin-top: 4rem;
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; }
+  .my-projects h1 {
+    text-align: center; }
+  .my-projects .line {
+    background: white; }
+  .my-projects .project {
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    height: auto; }
+    .my-projects .project img {
+      width: 300px;
+      height: 200px;
+      filter: grayscale(100%);
+      transition: 1s ease; }
+    .my-projects .project img:hover {
+      filter: grayscale(0%); }
+
 .grid {
   display: grid; }
 
@@ -200,7 +265,7 @@ h6 {
 
 .my-education {
   grid-template-columns: 50% 50%;
-  grid-template-areas: "h1 h1" "line line" "ned-img high-school-text" "lifechoices-img lifechoices-text"; }
+  grid-template-areas: "h1 h1" "line line" "ned-img high-school-text" "lifechoices-img lifechoices-text" "codespace-img codespace-text"; }
   .my-education h1 {
     grid-area: h1; }
   .my-education .line {
@@ -210,8 +275,29 @@ h6 {
   .my-education .high-school-text {
     grid-area: high-school-text; }
   .my-education .lifechoices-img {
+    margin-top: 3rem;
     grid-area: lifechoices-img; }
   .my-education .lifechoices-text {
+    margin-top: 3rem;
     grid-area: lifechoices-text; }
+  .my-education .codespace-img {
+    margin-top: 3rem;
+    grid-area: codespace-img; }
+  .my-education .codespace-text {
+    margin-top: 3rem;
+    grid-area: codespace-text; }
+
+.my-projects {
+  grid-template-areas: "h1 h1 h1" "line line line" "apology-letter outdoor-adventures fashion-website"; }
+  .my-projects h1 {
+    grid-area: h1; }
+  .my-projects .line {
+    grid-area: line; }
+  .my-projects .apology-letter {
+    grid-area: apology-letter; }
+  .my-projects .outdoor-adventures {
+    grid-area: outdoor-adventures; }
+  .my-projects .fashion-website {
+    grid-area: fashion-website; }
 
 /*# sourceMappingURL=main.css.map */

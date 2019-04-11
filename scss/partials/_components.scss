@@ -121,6 +121,13 @@
         text-align: right;
     }
 
+    .download-btn {
+        border: solid;
+        border: white;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+    }
+
     .arrow-gif {
         width: 5%;
         height: 5%;
@@ -136,7 +143,7 @@
     }
 
     .image-me {
-        height: 20rem;
+        height: 25rem;
         width: 30rem;
         background-color: #666666;
         margin-left: 20%;
@@ -201,5 +208,43 @@
     .codespace-img {
         display: grid;
         place-content: center;
+    }
+}
+
+.my-projects {
+    margin-top: 4rem;
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+    h1 {
+        text-align: center;
+    }
+
+    .line {
+        background: white;
+    }
+
+    .project {
+        text-align: center;
+        margin: 0 auto;
+        width: 300px;
+        height: auto;
+
+        img {
+            width: 300px;
+            height: 200px;
+            filter: grayscale(100%);
+            transition: 1s ease;
+            
+        }
+
+        img:hover {
+            filter: grayscale(0%);
+        }
+
     }
 }

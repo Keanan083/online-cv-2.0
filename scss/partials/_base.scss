@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Comfortaa', cursive;
@@ -15,4 +19,47 @@ h5,
 h6 {
     font-family: 'Poiret One', cursive;
     text-transform: uppercase;
+}
+
+footer {
+    margin-top: 6.25rem;
+    background-color: #4d4d4d;
+    color: white;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    line-height: 30px;
+
+    .fa-github {
+        color: white;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .fa-envelope {
+        margin-top: 2rem;
+    }
+
+    .fa-phone {
+        margin-top: 2rem;
+    }
+
+    .download-btn {
+        border: solid;
+        border-color: white;
+        background: rgba(0,0,0,0);
+        color: white;
+        width: 9.375rem;
+        height: 3.125rem;
+        transition: 1s ease;
+        margin: 2rem 0 2rem 0
+    }
+
+    .download-btn:hover {
+        color: black;
+        background: white;
+        border: none;
+        width: 10rem;
+        height: 3.75rem;
+    }
 }

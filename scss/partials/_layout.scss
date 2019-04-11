@@ -65,7 +65,8 @@
     "h1 h1"
     "line line"
     "ned-img high-school-text"
-    "lifechoices-img lifechoices-text";
+    "lifechoices-img lifechoices-text"
+    "codespace-img codespace-text";
 
     h1{
         grid-area: h1;
@@ -84,10 +85,49 @@
     }
 
     .lifechoices-img {
+        margin-top: 3rem;
         grid-area: lifechoices-img;
     }
 
     .lifechoices-text {
+        margin-top: 3rem;
         grid-area: lifechoices-text;
+    }
+
+    .codespace-img {
+        margin-top: 3rem;
+        grid-area: codespace-img;
+    }
+
+    .codespace-text {
+        margin-top: 3rem;
+        grid-area: codespace-text;
+    }
+}
+
+.my-projects {
+    grid-template-areas:
+    "h1 h1 h1"
+    "line line line"
+    "apology-letter outdoor-adventures fashion-website";
+
+    h1 {
+        grid-area: h1;
+    }
+
+    .line {
+        grid-area: line;
+    }
+
+    .apology-letter {
+        grid-area: apology-letter;
+    }
+
+    .outdoor-adventures {
+        grid-area: outdoor-adventures;
+    }
+
+    .fashion-website {
+        grid-area: fashion-website;
     }
 }
