@@ -34,6 +34,12 @@ footer {
         color: white;
         font-size: 2rem;
         margin-top: 2rem;
+        transition: 1s ease;
+    }
+
+    .fa-github:hover {
+        color: $mypurple;
+        font-size: 3rem;
     }
 
     .fa-envelope {

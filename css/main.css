@@ -28,7 +28,11 @@ footer {
   footer .fa-github {
     color: white;
     font-size: 2rem;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    transition: 1s ease; }
+  footer .fa-github:hover {
+    color: #5d1432;
+    font-size: 3rem; }
   footer .fa-envelope {
     margin-top: 2rem; }
   footer .fa-phone {
@@ -163,7 +167,9 @@ footer {
   .about-me .image-me {
     height: 25rem;
     width: 30rem;
-    background-color: #666666;
+    background: url(../images/empty.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-left: 20%; }
   .about-me .about-text {
     padding: 0 3rem 0 0; }
