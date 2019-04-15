@@ -170,7 +170,7 @@ footer {
     background: url(../images/empty.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 20%; }
+    margin-left: 7rem; }
   .about-me .about-text {
     padding: 0 3rem 0 0; }
 
@@ -305,5 +305,279 @@ footer {
     grid-area: outdoor-adventures; }
   .my-projects .fashion-website {
     grid-area: fashion-website; }
+
+@media only screen and (min-width: 851px) and (max-width: 1024px) {
+  body {
+    display: grid;
+    place-content: center; }
+
+  .grid {
+    display: grid;
+    text-align: center;
+    place-content: center; }
+
+  .hero h1,
+  .hero h3 {
+    padding: 0;
+    text-align: center;
+    font-weight: 100; }
+
+  .about-me {
+    grid-template-areas: "h1 h1" "line line" "image-me image-me" "about-text about-text"; }
+    .about-me h1 {
+      grid-area: h1; }
+    .about-me .line {
+      grid-area: line; }
+    .about-me .image-me {
+      grid-area: image-me;
+      margin: 0 auto;
+      margin-bottom: 3rem; }
+    .about-me .about-text {
+      grid-area: about-text;
+      margin: 0 4rem 0 4rem;
+      padding: 0; }
+
+  .skills-container {
+    margin: 0 5rem 0 7rem;
+    grid-gap: 10px;
+    grid-template-areas: "html css" "js sass" "jquery nodejs"; }
+    .skills-container .html {
+      grid-area: html; }
+    .skills-container .css {
+      grid-area: css; }
+    .skills-container .js {
+      grid-area: js; }
+    .skills-container .sass {
+      grid-area: sass; }
+    .skills-container .jquery {
+      grid-area: jquery; }
+    .skills-container .nodejs {
+      grid-area: nodejs; }
+
+  .my-education {
+    margin: 0 auto;
+    grid-template-areas: "h1 h1" "line line" "ned-img ned-img" "high-school-text high-school-text" "lifechoices-img lifechoices-img" "lifechoices-text lifechoices-text" "codespace-img codespace-img" "codespace-text codespace-text"; }
+    .my-education h1 {
+      grid-area: h1;
+      margin-top: 3rem; }
+    .my-education .line {
+      grid-area: line; }
+    .my-education .ned-img {
+      grid-area: ned-img; }
+    .my-education .high-school-text {
+      grid-area: high-school-text;
+      padding: 0 3rem 0 3rem; }
+    .my-education .lifechoices-img {
+      margin-top: 3rem;
+      grid-area: lifechoices-img; }
+    .my-education .lifechoices-text {
+      margin-top: 3rem;
+      grid-area: lifechoices-text;
+      padding: 0 3rem 0 3rem; }
+    .my-education .codespace-img {
+      margin-top: 3rem;
+      grid-area: codespace-img; }
+    .my-education .codespace-text {
+      margin-top: 3rem;
+      grid-area: codespace-text;
+      padding: 0 3rem 0 3rem; }
+
+  .my-projects {
+    grid-gap: 10px;
+    grid-template-areas: "h1" "line" "apology-letter outdoor-adventures fashion-website"; }
+    .my-projects h1 {
+      grid-area: h1; }
+    .my-projects .line {
+      grid-area: line; }
+    .my-projects .apology-letter {
+      grid-area: apology-letter; }
+    .my-projects .outdoor-adventures {
+      grid-area: outdoor-adventures; }
+    .my-projects .fashion-website {
+      grid-area: fashion-website; } }
+@media only screen and (min-width: 426px) and (max-width: 850px) {
+  body {
+    display: grid;
+    place-content: center; }
+
+  .grid {
+    display: grid;
+    text-align: center;
+    place-content: center; }
+
+  .hero h1,
+  .hero h3 {
+    padding: 0;
+    text-align: center;
+    font-weight: 100; }
+
+  .about-me {
+    grid-template-areas: "h1 h1" "line line" "image-me image-me" "about-text about-text"; }
+    .about-me h1 {
+      grid-area: h1; }
+    .about-me .line {
+      grid-area: line; }
+    .about-me .image-me {
+      grid-area: image-me;
+      margin: 0 auto;
+      margin-bottom: 3rem; }
+    .about-me .about-text {
+      grid-area: about-text;
+      margin: 0 4rem 0 4rem;
+      padding: 0; }
+
+  .skills-container {
+    margin: 0 5rem 0 7rem;
+    grid-gap: 4px;
+    grid-template-areas: "html css" "js sass" "jquery nodejs"; }
+    .skills-container .html {
+      grid-area: html; }
+    .skills-container .css {
+      grid-area: css; }
+    .skills-container .js {
+      grid-area: js; }
+    .skills-container .sass {
+      grid-area: sass; }
+    .skills-container .jquery {
+      grid-area: jquery; }
+    .skills-container .nodejs {
+      grid-area: nodejs; }
+
+  .my-education {
+    margin: 0 auto;
+    grid-template-areas: "h1 h1" "line line" "ned-img ned-img" "high-school-text high-school-text" "lifechoices-img lifechoices-img" "lifechoices-text lifechoices-text" "codespace-img codespace-img" "codespace-text codespace-text"; }
+    .my-education h1 {
+      grid-area: h1;
+      margin-top: 3rem; }
+    .my-education .line {
+      grid-area: line; }
+    .my-education .ned-img {
+      grid-area: ned-img; }
+    .my-education .high-school-text {
+      grid-area: high-school-text;
+      padding: 0 3rem 0 3rem; }
+    .my-education .lifechoices-img {
+      margin-top: 3rem;
+      grid-area: lifechoices-img; }
+    .my-education .lifechoices-text {
+      margin-top: 3rem;
+      grid-area: lifechoices-text;
+      padding: 0 3rem 0 3rem; }
+    .my-education .codespace-img {
+      margin-top: 3rem;
+      grid-area: codespace-img; }
+    .my-education .codespace-text {
+      margin-top: 3rem;
+      grid-area: codespace-text;
+      padding: 0 3rem 0 3rem; }
+
+  .my-projects {
+    grid-template-areas: "h1" "line" "apology-letter" "outdoor-adventures" "fashion-website"; }
+    .my-projects h1 {
+      grid-area: h1; }
+    .my-projects .line {
+      grid-area: line; }
+    .my-projects .apology-letter {
+      grid-area: apology-letter; }
+    .my-projects .outdoor-adventures {
+      grid-area: outdoor-adventures; }
+    .my-projects .fashion-website {
+      grid-area: fashion-website; } }
+@media only screen and (max-width: 425px) {
+  body {
+    display: grid;
+    place-content: center; }
+
+  .grid {
+    display: grid;
+    text-align: center;
+    place-content: center; }
+
+  .hero {
+    width: 100%; }
+    .hero h1,
+    .hero h3 {
+      padding: 0;
+      text-align: center;
+      font-weight: 100; }
+
+  .about-me {
+    grid-template-areas: "h1 h1 h1" "line line line" "image-me image-me image-me" "about-text about-text about-text"; }
+    .about-me h1 {
+      grid-area: h1; }
+    .about-me .line {
+      grid-area: line; }
+    .about-me .image-me {
+      grid-area: image-me;
+      margin: 0 auto;
+      margin-bottom: 3rem; }
+    .about-me .about-text {
+      grid-area: about-text;
+      margin: 0 3rem 0 3rem;
+      padding: 0; }
+
+  .skills-container {
+    margin: 0 5rem 0 7rem;
+    grid-gap: 4px;
+    grid-template-columns: 1;
+    grid-template-areas: "html html" "css css" "js js" "sass sass" "jquery jquery" "nodejs nodejs"; }
+    .skills-container .html {
+      grid-area: html; }
+    .skills-container .css {
+      grid-area: css; }
+    .skills-container .js {
+      grid-area: js; }
+    .skills-container .sass {
+      grid-area: sass; }
+    .skills-container .jquery {
+      grid-area: jquery; }
+    .skills-container .nodejs {
+      grid-area: nodejs; }
+
+  .my-education {
+    margin: 0 auto;
+    grid-template-areas: "h1 h1" "line line" "ned-img ned-img" "high-school-text high-school-text" "lifechoices-img lifechoices-img" "lifechoices-text lifechoices-text" "codespace-img codespace-img" "codespace-text codespace-text"; }
+    .my-education h1 {
+      grid-area: h1;
+      margin-top: 3rem; }
+    .my-education .line {
+      grid-area: line; }
+    .my-education .ned-img {
+      grid-area: ned-img; }
+    .my-education .high-school-text {
+      grid-area: high-school-text;
+      padding: 0 3rem 0 3rem; }
+    .my-education .lifechoices-img {
+      margin-top: 3rem;
+      grid-area: lifechoices-img; }
+    .my-education .lifechoices-text {
+      margin-top: 3rem;
+      grid-area: lifechoices-text;
+      padding: 0 3rem 0 3rem; }
+    .my-education .codespace-img {
+      margin-top: 3rem;
+      grid-area: codespace-img; }
+    .my-education .codespace-text {
+      margin-top: 3rem;
+      grid-area: codespace-text;
+      padding: 0 3rem 0 3rem; }
+
+  .my-projects {
+    grid-template-areas: "h1" "line" "apology-letter" "outdoor-adventures" "fashion-website"; }
+    .my-projects h1 {
+      grid-area: h1; }
+    .my-projects .line {
+      grid-area: line; }
+    .my-projects .apology-letter {
+      grid-area: apology-letter; }
+    .my-projects .outdoor-adventures {
+      grid-area: outdoor-adventures; }
+    .my-projects .fashion-website {
+      grid-area: fashion-website; }
+
+  footer span {
+    padding: 0 4rem 0 4rem; }
+  footer p {
+    padding: 0 4rem 0 4rem; } }
 
 /*# sourceMappingURL=main.css.map */

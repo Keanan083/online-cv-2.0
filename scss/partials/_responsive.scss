@@ -1,0 +1,514 @@
+@media only screen and (min-width:851px) and (max-width:1024px) {
+
+    body {
+        display: grid;
+        place-content: center;
+    } 
+     
+    .grid {
+        display: grid;
+        text-align: center;
+        place-content: center;
+    }
+
+    .hero {
+        h1,
+        h3 {
+            padding: 0;
+            text-align: center;
+            font-weight: 100;
+        }
+    }
+
+    
+    .about-me {
+        grid-template-areas:
+        "h1 h1"
+        "line line"
+        "image-me image-me"
+        "about-text about-text";
+    
+        h1 {
+            grid-area: h1;
+        }
+    
+        .line {
+            grid-area: line;
+        }
+    
+        .image-me {
+            grid-area: image-me;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+        }
+    
+        .about-text {
+            grid-area: about-text;
+            margin: 0 4rem 0 4rem;
+            padding: 0;
+        }
+    }
+    
+    .skills-container {
+        margin: 0 5rem 0 7rem;
+        grid-gap: 10px;
+        grid-template-areas:
+        "html css"
+        "js sass"
+        "jquery nodejs";
+    
+        .html {
+            grid-area: html;
+        }
+    
+        .css {
+            grid-area: css;
+        }
+    
+        .js {
+            grid-area: js;
+        }
+    
+        .sass {
+            grid-area: sass;
+        }
+    
+        .jquery {
+            grid-area: jquery;
+        }
+    
+        .nodejs {
+            grid-area: nodejs;
+        }
+    }
+    
+    .my-education {
+        margin: 0 auto;
+        grid-template-areas:
+        "h1 h1"
+        "line line"
+        "ned-img ned-img"
+        "high-school-text high-school-text"
+        "lifechoices-img lifechoices-img"
+        "lifechoices-text lifechoices-text"
+        "codespace-img codespace-img"
+        "codespace-text codespace-text";
+    
+        h1{
+            grid-area: h1;
+            margin-top: 3rem;
+        }
+    
+        .line {
+            grid-area: line;
+        }
+    
+        .ned-img {
+            grid-area: ned-img;
+        }
+    
+        .high-school-text {
+            grid-area: high-school-text;
+            padding: 0 3rem 0 3rem;
+        }
+    
+        .lifechoices-img {
+            margin-top: 3rem;
+            grid-area: lifechoices-img;
+        }
+    
+        .lifechoices-text {
+            margin-top: 3rem;
+            grid-area: lifechoices-text;
+            padding: 0 3rem 0 3rem;
+        }
+    
+        .codespace-img {
+            margin-top: 3rem;
+            grid-area: codespace-img;
+        }
+    
+        .codespace-text {
+            margin-top: 3rem;
+            grid-area: codespace-text;
+            padding: 0 3rem 0 3rem;
+        }
+    }
+    
+    .my-projects {
+        grid-gap: 10px;
+        grid-template-areas:
+        "h1"
+        "line"
+        "apology-letter outdoor-adventures fashion-website";
+    
+        h1 {
+            grid-area: h1;
+        }
+    
+        .line {
+            grid-area: line;
+        }
+    
+        .apology-letter {
+            grid-area: apology-letter;
+        }
+    
+        .outdoor-adventures {
+            grid-area: outdoor-adventures;
+        }
+    
+        .fashion-website {
+            grid-area: fashion-website;
+        }
+    }
+}
+
+@media only screen and (min-width:426px) and (max-width:850px) {
+   body {
+       display: grid;
+       place-content: center;
+   } 
+    
+    .grid {
+        display: grid;
+        text-align: center;
+        place-content: center;
+    }
+
+    .hero {
+        h1,
+        h3 {
+            padding: 0;
+            text-align: center;
+            font-weight: 100;
+        }
+    }
+
+    
+    .about-me {
+        grid-template-areas:
+        "h1 h1"
+        "line line"
+        "image-me image-me"
+        "about-text about-text";
+    
+        h1 {
+            grid-area: h1;
+        }
+    
+        .line {
+            grid-area: line;
+        }
+    
+        .image-me {
+            grid-area: image-me;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+        }
+    
+        .about-text {
+            grid-area: about-text;
+            margin: 0 4rem 0 4rem;
+            padding: 0;
+        }
+    }
+    
+    .skills-container {
+        margin: 0 5rem 0 7rem;
+        grid-gap: 4px;
+        grid-template-areas:
+        "html css"
+        "js sass"
+        "jquery nodejs";
+    
+        .html {
+            grid-area: html;
+        }
+    
+        .css {
+            grid-area: css;
+        }
+    
+        .js {
+            grid-area: js;
+        }
+    
+        .sass {
+            grid-area: sass;
+        }
+    
+        .jquery {
+            grid-area: jquery;
+        }
+    
+        .nodejs {
+            grid-area: nodejs;
+        }
+    }
+    
+    .my-education {
+        margin: 0 auto;
+        grid-template-areas:
+        "h1 h1"
+        "line line"
+        "ned-img ned-img"
+        "high-school-text high-school-text"
+        "lifechoices-img lifechoices-img"
+        "lifechoices-text lifechoices-text"
+        "codespace-img codespace-img"
+        "codespace-text codespace-text";
+    
+        h1{
+            grid-area: h1;
+            margin-top: 3rem;
+        }
+    
+        .line {
+            grid-area: line;
+        }
+    
+        .ned-img {
+            grid-area: ned-img;
+        }
+    
+        .high-school-text {
+            grid-area: high-school-text;
+            padding: 0 3rem 0 3rem;
+        }
+    
+        .lifechoices-img {
+            margin-top: 3rem;
+            grid-area: lifechoices-img;
+        }
+    
+        .lifechoices-text {
+            margin-top: 3rem;
+            grid-area: lifechoices-text;
+            padding: 0 3rem 0 3rem;
+        }
+    
+        .codespace-img {
+            margin-top: 3rem;
+            grid-area: codespace-img;
+        }
+    
+        .codespace-text {
+            margin-top: 3rem;
+            grid-area: codespace-text;
+            padding: 0 3rem 0 3rem;
+        }
+    }
+    
+    .my-projects {
+        grid-template-areas:
+        "h1"
+        "line"
+        "apology-letter"
+        "outdoor-adventures"
+        "fashion-website";
+    
+        h1 {
+            grid-area: h1;
+        }
+    
+        .line {
+            grid-area: line;
+        }
+    
+        .apology-letter {
+            grid-area: apology-letter;
+        }
+    
+        .outdoor-adventures {
+            grid-area: outdoor-adventures;
+        }
+    
+        .fashion-website {
+            grid-area: fashion-website;
+        }
+    }
+}
+
+@media only screen and (max-width:425px) {
+    body {
+        display: grid;
+        place-content: center;
+    } 
+     
+    .grid {
+        display: grid;
+        text-align: center;
+        place-content: center;
+    }
+
+    .hero {
+        width: 100%;
+
+        h1,
+        h3 {
+            padding: 0;
+            text-align: center;
+            font-weight: 100;
+        }
+    }
+
+    
+    .about-me {
+        grid-template-areas:
+        "h1 h1 h1"
+        "line line line"
+        "image-me image-me image-me"
+        "about-text about-text about-text";
+    
+        h1 {
+            grid-area: h1;
+        }
+    
+        .line {
+            grid-area: line;
+        }
+    
+        .image-me {
+            grid-area: image-me;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+        }
+    
+        .about-text {
+            grid-area: about-text;
+            margin: 0 3rem 0 3rem;
+            padding: 0;
+        }
+    }
+    
+    .skills-container {
+        margin: 0 5rem 0 7rem;
+        grid-gap: 4px;
+        grid-template-columns: 1;
+        grid-template-areas:
+        "html html"
+        "css css"
+        "js js"
+        "sass sass"
+        "jquery jquery"
+        "nodejs nodejs";
+    
+        .html {
+            grid-area: html;
+        }
+    
+        .css {
+            grid-area: css;
+        }
+    
+        .js {
+            grid-area: js;
+        }
+    
+        .sass {
+            grid-area: sass;
+        }
+    
+        .jquery {
+            grid-area: jquery;
+        }
+    
+        .nodejs {
+            grid-area: nodejs;
+        }
+    }
+    
+    .my-education {
+        margin: 0 auto;
+        grid-template-areas:
+        "h1 h1"
+        "line line"
+        "ned-img ned-img"
+        "high-school-text high-school-text"
+        "lifechoices-img lifechoices-img"
+        "lifechoices-text lifechoices-text"
+        "codespace-img codespace-img"
+        "codespace-text codespace-text";
+    
+        h1{
+            grid-area: h1;
+            margin-top: 3rem;
+        }
+    
+        .line {
+            grid-area: line;
+        }
+    
+        .ned-img {
+            grid-area: ned-img;
+        }
+    
+        .high-school-text {
+            grid-area: high-school-text;
+            padding: 0 3rem 0 3rem;
+        }
+    
+        .lifechoices-img {
+            margin-top: 3rem;
+            grid-area: lifechoices-img;
+        }
+    
+        .lifechoices-text {
+            margin-top: 3rem;
+            grid-area: lifechoices-text;
+            padding: 0 3rem 0 3rem;
+        }
+    
+        .codespace-img {
+            margin-top: 3rem;
+            grid-area: codespace-img;
+        }
+    
+        .codespace-text {
+            margin-top: 3rem;
+            grid-area: codespace-text;
+            padding: 0 3rem 0 3rem;
+        }
+    }
+    
+    .my-projects {
+        grid-template-areas:
+        "h1"
+        "line"
+        "apology-letter"
+        "outdoor-adventures"
+        "fashion-website";
+    
+        h1 {
+            grid-area: h1;
+        }
+    
+        .line {
+            grid-area: line;
+        }
+    
+        .apology-letter {
+            grid-area: apology-letter;
+        }
+    
+        .outdoor-adventures {
+            grid-area: outdoor-adventures;
+        }
+    
+        .fashion-website {
+            grid-area: fashion-website;
+        }
+    }
+
+    footer {
+        span {
+            padding: 0 4rem 0 4rem;
+        }
+
+        p {
+            padding: 0 4rem 0 4rem;
+        }
+    }
+}
+
