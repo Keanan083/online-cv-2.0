@@ -167,7 +167,7 @@ footer {
   .about-me .image-me {
     height: 25rem;
     width: 30rem;
-    background: url(../images/empty.jpg);
+    background: url(../images/image-me.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 7rem; }
